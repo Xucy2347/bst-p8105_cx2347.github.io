@@ -1,0 +1,30 @@
+---
+title: "CX's website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# Greetings
+Hi, everyone.\
+This is chuyuan's website
+
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+you can do everything you might usually do.
+
+Than means you can add text.
+
+This website is an example coming from [P8105](https://p8105.com/index.html). We' re making websites today! Learn more about this site [here](about.html).
+
+I also use [google](https://www.google.com/) a ton for data science.
+
+# Some plots?
+here are some [plots](plots.html). It is amazing to see that you can use the r markdown as usual when you are making the website.
+
+here's a picture:
+
+![](image/image1.png)

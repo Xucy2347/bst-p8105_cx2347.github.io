@@ -1,0 +1,14 @@
+---
+title: "About this website"
+author: "Chuyuan XU"
+date: "last modified: `r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+hi, this is the about file.
+This website was coded by Chuyuan Xu using RMarkdown.\
+You can go back to [homepage](index.html) or you can go to the [course page](https://p8105.com/)

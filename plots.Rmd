@@ -1,0 +1,36 @@
+---
+title: "here are some plots"
+author: "Chuyuan XU"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+here's the tidyverse
+
+```{r, message=FALSE}
+library(tidyverse)
+```
+
+here's a dataframe
+```{r, message=FALSE}
+plot_df = 
+  tibble(
+    x = rnorm(180, mean = 1, sd = 2),
+    y = 1+2*x+rnorm(100)
+  )
+```
+
+here's ths plot
+```{r}
+plot_df |>
+    ggplot(aes(x =x, y = y)) +
+  geom_point() +
+  theme_minimal()
+```
+
+
+
