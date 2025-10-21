@@ -1,17 +1,17 @@
 ---
-title: "Plotly Examples"
-author: "Chuyuan XU"
-date: "`r Sys.Date()`"
-output: html_document
+title: "FlexDashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
 ```{r setup, include=FALSE}
+library(flexdashboard)
 library(tidyverse)
 library(plotly)
 library(p8105.datasets)
-```
 
-```{r}
 data(nyc_airbnb)
 
 nyc_airbnb = 
@@ -26,7 +26,10 @@ nyc_airbnb =
     price %in% 100:500)
 ```
 
-Make interactive csatterplot!
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
 ```{r}
 nyc_airbnb |>
   mutate(
@@ -40,8 +43,10 @@ nyc_airbnb |>
   )
 ```
 
-Let's make box plot
+Column {data-width=350}
+-----------------------------------------------------------------------
 
+### Chart B
 ```{r}
 nyc_airbnb |>
   mutate(
@@ -53,8 +58,7 @@ nyc_airbnb |>
   )
 ```
 
-
-barchart
+### Chart C
 ```{r}
 nyc_airbnb |>
   count(neighbourhood) |>
@@ -65,15 +69,5 @@ nyc_airbnb |>
     x = ~neighbourhood, y = ~n,
     type = "bar"
   )
-```
-
-ggplotly???
-```{r}
-ggp_scatterplot = 
-  nyc_airbnb |>
-  ggplot(aes(x = lat, y =long, color = price)) +
-  geom_point()
-
-ggplotly(ggp_scatterplot)
 ```
 
