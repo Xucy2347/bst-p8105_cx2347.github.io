@@ -23,7 +23,8 @@ This website is an example coming from [P8105](https://p8105.com/index.html). We
 I also use [google](https://www.google.com/) a ton for data science.
 
 # Some plots?
-here are some [plots](plots.html). It is amazing to see that you can use the r markdown as usual when you are making the website.
+here are some [plots](plots.html). It is amazing to see that you can use the r markdown as usual when you are making the website.\
+Maybe some [plotly plots](plotly.html)?
 
 here's a picture:
 
